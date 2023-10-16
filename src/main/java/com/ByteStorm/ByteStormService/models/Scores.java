@@ -11,9 +11,8 @@ public class Scores {
     @Id
     @JsonProperty("_id")
     private String id;
-
+    @JsonProperty("name")
     private String name;
-    private Map<String, String> details;
-    private Map<String, Byte> skills;
-    private Map<String, Weapons> weapons;
+    @JsonProperty("score")
+    private Integer score;
 }
